@@ -44,4 +44,4 @@ const metadata_uri =
   console.log("Mint Address: ", mint.publicKey);
 })();
 
-// Mint Address:  6Pdvt2oNPaq8XPtLPtWQrCB1RGTU19DRtKYoeBTJEEtu
+// Mint Address:  8hs7LbyjZASixveLrtgpdQZa9cCc5heDWYcgsySyBgEC

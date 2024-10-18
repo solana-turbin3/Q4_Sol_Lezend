@@ -1,4 +1,6 @@
-# Lezend's Turbin3 Q4 Sol 2024 work
+# Lezend's Turbin3 Q4 Builders cohort work
+
+This repository contains the work I completed as part of the Turbin3 Q4 2024 Builders cohort.
 
 Dev Wallet: `9fBPHthnGU2SBaSifXhDw526q2R27HBjt7VyJi67bX8z`
 
@@ -10,6 +12,8 @@ I replaced Yarn with the Bun package manager due to personal preference, as Bun 
 
 - Minted an SPL token with metadata and conducted test transfers on devnet.
 **Token address**: `7DT1DrgoPYnWTaGyZkHW3qjr7cKTTbKsvHqH6diSNC18`
+![SPL Token](./assets/images/spl-token.png)
 
 - Created and minted an NFT with metadata and an image on devnet using Metaplex’s UMI framework.
-**NFT address**: `6Pdvt2oNPaq8XPtLPtWQrCB1RGTU19DRtKYoeBTJEEtu`
+**NFT address**: `8hs7LbyjZASixveLrtgpdQZa9cCc5heDWYcgsySyBgEC`
+![NFT](./assets/images/rug-nft.png)
