@@ -1,0 +1,7 @@
+*wallet.json
+node_modules
+target
+.DS_Store
+
+# Bun lock file
+bun.lockb
