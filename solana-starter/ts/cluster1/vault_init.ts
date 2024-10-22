@@ -3,11 +3,11 @@ import {
   Keypair,
   SystemProgram,
   PublicKey,
-  Commitment,
+  Commitment
 } from "@solana/web3.js";
 import { Program, Wallet, AnchorProvider, Address } from "@coral-xyz/anchor";
 import { WbaVault, IDL } from "./programs/wba_vault";
-import wallet from "./wallet/wba-wallet.json";
+import wallet from "../wba-wallet.json";
 /// J8qKEmQpadFeBuXAVseH8GNrvsyBhMT8MHSVD3enRgJz
 
 // Import our keypair from the wallet file
@@ -21,14 +21,14 @@ const connection = new Connection("https://api.devnet.solana.com");
 
 // Create our anchor provider
 const provider = new AnchorProvider(connection, new Wallet(keypair), {
-  commitment,
+  commitment
 });
 
 // Create our program
 const program = new Program<WbaVault>(
   IDL,
   "D51uEDHLbWAxNfodfQDv7qkp8WZtxrhi3uganGbNos7o" as Address,
-  provider,
+  provider
 );
 
 // Create a random keypair
@@ -46,11 +46,27 @@ console.log(`Vault public key: ${vaultState.publicKey.toBase58()}`);
 // Execute our enrollment transaction
 (async () => {
   try {
-    // const signature = await program.methods.initialize()
-    // .accounts({
-    //     ???
-    // }).signers([keypair, vaultState]).rpc();
-    // console.log(`Init success! Check out your TX here:\n\nhttps://explorer.solana.com/tx/${signature}?cluster=devnet`);
+    // Find the vaultAuth PDA
+    const [vaultAuth, _vaultAuthBump] = PublicKey.findProgramAddressSync(
+      [Buffer.from("auth"), vaultState.publicKey.toBuffer()],
+      program.programId
+    );
+
+    // Execute the initialization transaction
+    const signature = await program.methods
+      .initialize()
+      .accounts({
+        owner: keypair.publicKey,
+        vault: vaultState.publicKey,
+        vaultAuth: vaultAuth,
+        vaultState: vaultState.publicKey,
+        systemProgram: SystemProgram.programId
+      })
+      .signers([keypair])
+      .rpc();
+    console.log(
+      `Init success! Check out your TX here:\n\nhttps://explorer.solana.com/tx/${signature}?cluster=devnet`
+    );
   } catch (e) {
     console.error(`Oops, something went wrong: ${e}`);
   }

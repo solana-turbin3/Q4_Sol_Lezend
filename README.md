@@ -17,3 +17,7 @@ I replaced Yarn with the Bun package manager due to personal preference, as Bun 
 - Created and minted an NFT with metadata and an image on devnet using Metaplex’s UMI framework.
 **NFT address**: `8hs7LbyjZASixveLrtgpdQZa9cCc5heDWYcgsySyBgEC`
 ![NFT](./assets/images/rug-nft.png)
+
+## Week-2
+
+- [Vault Program](/solana-starter/vault-program): Developed a basic Solana vault program enabling users to deposit and withdraw SOL, accompanied by comprehensive tests for all instructions.
