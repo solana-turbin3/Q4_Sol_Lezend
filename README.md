@@ -20,4 +20,6 @@ I replaced Yarn with the Bun package manager due to personal preference, as Bun 
 
 ## Week-2
 
-- [Vault Program](/solana-starter/vault-program): Developed a basic Solana vault program enabling users to deposit and withdraw SOL, accompanied by comprehensive tests for all instructions.
+- [Vault Program](/programs/vault-program): Developed a basic Solana vault program enabling users to deposit and withdraw SOL, accompanied by comprehensive tests for all instructions.
+
+- [Escrow Program](/programs/escrow-program): Developed an escrow program enabling two users to securely swap tokens without requiring a centralized counterparty. The implementation includes all relevant test cases to ensure reliability and accuracy.
