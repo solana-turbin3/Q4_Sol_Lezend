@@ -1,14 +1,21 @@
-# Lezend's Turbin3 Q4 Builders cohort work
+# Lezend's Turbin3 Q4 Builders Cohort Portfolio
 
-This repository contains the work I completed as part of the Turbin3 Q4 2024 Builders cohort.
+This repository showcases the projects and work completed during the Turbin3 Q4 2024 Builders cohort.
 
-**Dev Wallet**: `9fBPHthnGU2SBaSifXhDw526q2R27HBjt7VyJi67bX8z`
+**Developer Wallet**: `9fBPHthnGU2SBaSifXhDw526q2R27HBjt7VyJi67bX8z`
 
-I replaced Yarn with the Bun package manager due to personal preference, as Bun is newer, faster, and gaining popularity. If Bun becomes problematic at any point, it can easily be reverted back to Yarn by deleting the `bun.lockb` file and running `yarn install` again.
+## Codecracy (Capstone Project)
 
-[Bun Docs](https://bun.sh/docs)
+![Codecracy](./assets/images/codecracy.png)
+> Incentivize Code Contributions with Blockchain
 
-## Week-1
+**Website**: [Codecracy](https://codecracy.vercel.app/)  
+**Devnet Address**: `j8RWHX7RcLfWxkimpbgrSv6cPjUdpdGvjj3n3ikd53S`  
+**Documentation and Repository**: [Codecracy GitHub](https://github.com/thelezend/codecracy)
+
+## Additional Learning Outcomes
+
+### Week-1
 
 - Minted an SPL token with metadata and conducted test transfers on devnet.
     **Token address**: `7DT1DrgoPYnWTaGyZkHW3qjr7cKTTbKsvHqH6diSNC18`
@@ -18,7 +25,7 @@ I replaced Yarn with the Bun package manager due to personal preference, as Bun 
     **NFT address**: `8hs7LbyjZASixveLrtgpdQZa9cCc5heDWYcgsySyBgEC`
     ![NFT](./assets/images/rug-nft.png)
 
-## Week-2
+### Week-2
 
 - [Vault Program](/programs/vault-program): Developed a basic Solana vault program enabling users to deposit and withdraw SOL, accompanied by comprehensive tests for all instructions.
 
@@ -26,40 +33,16 @@ I replaced Yarn with the Bun package manager due to personal preference, as Bun 
 
 - [NFT Staking Program](/programs/nft-staking-program/): Implemented an NFT staking program that allows users to stake their NFTs for a specified minimum freeze period and earn rewards for their commitment. Comprehensive tests are included to ensure reliability and accuracy.
 
-## Week-3
+### Week-3
 
 - [Anchor AMM Program](/programs/anchor-amm): Developed an Anchor AMM program enabling users to create and interact with a decentralized exchange (DEX) for trading tokens.
 
 - [Anchor Marketplace Program](/programs/anchor-marketplace): Developed an Anchor Marketplace program enabling users to list, buy, and sell NFTs on a decentralized marketplace.
 
-## Codecracy
+## Conclusion
 
-![Codecracy](./assets/images/codecracy.png)
+This portfolio represents my journey and growth throughout the Turbin3 Q4 2024 Builders cohort. It showcases a range of projects from basic token creation to complex decentralized applications, demonstrating my evolving skills in blockchain development on the Solana network. Each project has contributed to my understanding of smart contract development, testing, and deployment in the Solana ecosystem.
 
-> Incentivize Code Contributions with Blockchain
+For more information about any of these projects or to connect with me, please visit my GitHub profile or reach out via Discord.
 
-### Overview
-
-Empower developers, reward impact, build better software. Codecracy is a decentralized protocol that enables teams to track, vote on, and reward code contributions using Solana blockchain.
-
-Devnet program address: `j8RWHX7RcLfWxkimpbgrSv6cPjUdpdGvjj3n3ikd53S`
-[Launch App →](https://codecracy.vercel.app/)
-
-> The protocol is still in development and is subject to change.
-
-### Target Audiences 🎯
-
-- 🏢 **Development Teams**: Fair reward distribution in companies
-- 💻 **Open Source**: Community contribution incentivization
-- 🌐 **DAOs & Web3**: Decentralized development tracking
-- 🏆 **Hackathons**: Merit-based prize distribution
-- 👥 **Coding Groups**: Gamified project collaboration
-
-### Core Features ⚡
-
-- 🗳️ **Democratic Voting**: Transparent assessment system
-- 💰 **Rewards**: Score-based compensation
-- 🛡️ **Security**: Solana-powered protocol
-- 👥 **Team Management**: Efficient member handling
-- ⭐ **Impact Scoring**: Advanced contribution metrics
-- 🔄 **PR Tracking**: Contribution management (Coming Soon)
+Thank you for exploring my Turbin3 Q4 Builders Cohort Portfolio!
